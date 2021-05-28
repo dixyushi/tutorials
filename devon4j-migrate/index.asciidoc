@@ -25,13 +25,11 @@ Now, we will create a sample devon4j application with the name *sampleapp*.
 createDevon4jProject("sampleapp")
 --
 
---
-executeCommand("devon", "devon")
---
 ====
 In the below step it will execute "devon java migrate".
 [step]
 --
+executeCommand("devon", "devon")
 executeCommand("devon java migrate", "devon java migrate", {"dir": "sampleapp"})
 --
 
