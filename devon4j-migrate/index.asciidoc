@@ -29,7 +29,7 @@ createDevon4jProject("sampleapp")
 In the below step it will execute "devon java migrate".
 [step]
 --
-changeDirectory("sampleapp")
+executeCommand("cd sampleapp", "cd sampleapp")
 executeCommand("devon java migrate", "devon java migrate", {"dir": "sampleapp"})
 --
 
