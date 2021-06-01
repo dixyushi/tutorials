@@ -1,4 +1,5 @@
 = Migrate a devon4j project to the latest version
+== subtitle
 ====
 The java commandlet allows to setup Java. Also it supports devon4j. The arguments (devon java «args») are explained by the below details: 
 https://devonfw.com/website/pages/docs/devonfw-ide-usage.asciidoc.html#java.asciidoc
@@ -12,6 +13,7 @@ Here in this tutorial you will learn
 * How to migrate an older version of devon4j project to the latest version.
 
 ====
+
 Install older version of devonfw ( "2020.08.001")
 [step]
 --
@@ -19,22 +21,18 @@ restoreDevonfwIde(["java","mvn"])
 --
 
 Now, we will create a sample devon4j application with the name *sampleapp*.
-
 [step]
 --
-createDevon4jProject("sampleapp")
+executeCommand("mvn -DarchetypeVersion=3.0.1 -DarchetypeGroupId=com.devonfw.java.templates -DarchetypeArtifactId=devon4j-template-server archetype:generate", "mvn -DarchetypeVersion=3.0.1 -DarchetypeGroupId=com.devonfw.java.templates -DarchetypeArtifactId=devon4j-template-server archetype:generate", {"args":["-DgroupId=com.example.application", "-DartifactId=sampleapp", "-Dversion=1.0.0-SNAPSHOT", "-Dpackage=com.devonfw.application.sampleapp", "-DinteractiveMode=false"] })
 --
 
-====
+
 In the below step it will execute "devon java migrate".
 [step]
 --
 executeCommand("devon java migrate", "devon java migrate", {"dir": "sampleapp"})
 --
 
-This will migrate current devon4j application from "2020.08.001" to the latest version available.
-
-====
 
 ====
 ## Conclusion
@@ -42,4 +40,5 @@ This will migrate current devon4j application from "2020.08.001" to the latest v
 In this tutorial you have learnt How to migrate an older version of devon4j project to the latest version using command line.
 
 ====
+
 
