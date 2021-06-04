@@ -1,5 +1,5 @@
 = Migrate a devon4j project to the latest version
-== subtitle
+== Some subtitle
 ====
 The java commandlet allows to setup Java. Also it supports devon4j. The arguments (devon java «args») are explained by the below details: 
 https://devonfw.com/website/pages/docs/devonfw-ide-usage.asciidoc.html#java.asciidoc
@@ -13,6 +13,7 @@ Here in this tutorial you will learn
 * How to migrate an older version of devon4j project to the latest version.
 
 ====
+
 
 Install older version of devonfw ( "2020.08.001")
 [step]
